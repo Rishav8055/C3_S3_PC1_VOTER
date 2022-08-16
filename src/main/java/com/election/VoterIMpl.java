@@ -1,7 +1,14 @@
-package org.example;
+package com.election;
 
-public class Main {
+public class VoterIMpl {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Voter voter = new Voter();
+        voter.setName("john");
+        System.out.print(voter.getName());
+        voter.setAge(16);
+        System.out.println(" is "+ voter.getAgeCriteria(0));
+
+
+
     }
 }
